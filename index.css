@@ -23,7 +23,7 @@ body {
     height: 70%;
 }
 
-.top-left, .top-right, .bottom-left, .bottom-right {
+.top-left, .top-right, .bottom-right {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -39,10 +39,29 @@ body {
     display: flex;
 }
 
+.bottom-left-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    width: 70%;
+    height: 70%;
+
+}
+.bottom-left-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 70%;
+}
+
 .bottom-left {
     width: 70%;
+    height: 60%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .bottom-right {
@@ -117,21 +136,33 @@ body {
     margin-top: 0px;
 }
 
-.project1 {
-    width: 50%;
+.project1,
+.project2 {
+    width: 35%; /* Each project takes up 35% of the width of the bottom-left section */
+    height: 60%; /* Each project takes up 60% of the height of the bottom-left section */
+    margin-top: 10px; /* Adds space between the header and projects */
+    padding: 10px; /* Adds padding around each project */
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color:#82E3E3
+    flex-direction: row;
+    align-items: center;
 }
 
-.project h3 {
-    color: black;
+.project1 {
+    background-color: #FFFF00; /* Yellow background */
 }
 
-.project img {
-    width: 300px;
-    height: 200px;
+.project2 {
+    background-color: #00FF00; /* Green background */
+}
+
+.project1 img {
+    width: 150px; /* Set width of project images */
+    height: 150px; /* Set height of project images */
+}
+
+.project2 img {
+    width: 150px; /* Set width of project images */
+    height: 150px; /* Set height of project images */
 }
 
 .bottom-right h2 {
